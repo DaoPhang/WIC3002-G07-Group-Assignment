@@ -3,3 +3,11 @@
 
 # private keys stay on each person's laptop
 *_private.pem
+
+# generated keys, signatures and demo files are made locally, not committed
+*.pem
+*.sig
+notice_edited.txt
+
+# Python cache
+__pycache__/

@@ -16,8 +16,8 @@ def main():
     try:
         with open(pem_path, "rb") as f:
             data = f.read()
-    except FileNotFoundError:
-        print(f"Error: key file '{pem_path}' not found.")
+    except OSError:
+        print(f"Error: cannot read key file '{pem_path}'.")
         sys.exit(1)
 
     # Parse the PEM into a public key object. If the file is not a PEM public

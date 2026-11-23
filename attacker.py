@@ -67,6 +67,7 @@ def main():
     print("Signature file:  attacker.sig")
     print(f"Signature size:  {len(signature)} bytes")
     print(f"Signature (hex): {signature.hex()}")
+    print("Note: running this again creates a NEW attacker key pair and overwrites these files.")
 
 
 if __name__ == "__main__":
